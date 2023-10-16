@@ -1,0 +1,39 @@
+{
+  "name": "raudoc-server",
+  "version": "1.0.0",
+  "description": "Server for raudoc.",
+  "main": "index.ts",
+  "scripts": {
+    "start": "node ./dist/index.js",
+    "dev": "nodemon index.ts",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "David Pena Avila <dot@cooweb.co>",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/cors": "^2.8.12",
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.13",
+    "@types/express-form-data": "^2.0.2",
+    "@types/html-pdf": "^3.0.0",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "@google-cloud/storage": "^6.9.4",
+    "axios": "^0.27.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-form-data": "^2.0.22",
+    "firebase": "^8.10.1",
+    "firebase-admin": "^8.13.0",
+    "handlebars": "^4.7.7",
+    "html-pdf": "^3.0.1",
+    "moment": "^2.29.4",
+    "ts-morph": "^18.0.0",
+    "ts-node": "^10.9.1",
+    "yn": "^5.0.0"
+  }
+}

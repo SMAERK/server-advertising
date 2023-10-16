@@ -1,0 +1,12 @@
+# Directories
+node_modules
+dist
+.Ds_Store
+
+# Environment Variables
+.env
+.env.*
+
+# Service Accounts
+service-account-key-dev.json
+service-account-key-prod.json

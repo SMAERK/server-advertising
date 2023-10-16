@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<style>
+    body {
+          font-size: 20px; 
+        }
+    * {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: normal;
+    }
+    .no-break {
+     page-break-inside: avoid;
+    
+    }
+    .no-breaks {
+     page-break-before: always;
+    
+    }
+    .no_borde {
+         border: transparent
+    }
+    .page{
+    counter-reset: page;
+    }
+        
+    .arrow-down {
+    width: 0; 
+    height: 0; 
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    margin-top: -2%;
+    margin-left: 40%;
+    /* left: 40%;
+    bottom: 5%; */
+    size: 30%;
+    }
+    .logo {
+       margin-left: 2%;
+       margin-top: -2%;
+       display: block;
+       
+    }
+    
+    .logodawipo {
+      width: 50%;
+      margin-left: 85%;
+      margin-top: 40%;
+    }
+    .letterc {
+        margin-left: 63%;
+        margin-top: 2%;   
+    }
+    .letterr {
+        margin-left: 70%;
+        margin-top: -5%;   
+    }
+    
+    .lettertitle {
+        font-size: 80%;
+        font-weight: bolder;
+    }
+    .marca {
+    opacity:0.11;
+    filter: alpha(opacity=50);
+    position: fixed;
+    
+    }
+    .negritas {
+
+        font-size: 50%;
+    }
+    .letter {
+            font-size: 70%;
+            
+        }
+        .lettertable {
+            font-size: 55%;
+            
+        }
+    
+    .dec {
+        text-decoration-line: overline underline line-through;
+    }
+    table,
+    th,
+    tr {
+        border: solid 1px #202020;
+        border-collapse: collapse;
+        padding: 2px;
+    }
+    .container {
+        margin-top: -1%;
+    }
+    
+</style>
+<div id="pageHeader" style="padding: 1%;">
+    <table width="550px" class="no_borde">
+        <tr class="no_borde">
+            <td width="60%">
+                <img style="width: 20%;margin-top: -5%;" src="data:image/{{typeimagednc}};base64,{{imageenc}}" />
+            </td>
+            <td width="40%" style="margin-right:2%;text-align: right;margin-right:2%;">
+                <span class="titleBolder" style="text-align: center;height: 20px;vertical-align:top">Advertising Systems</span><br>
+                <span class="titleBolder" style="text-align: center;height: 20px;vertical-align:top">
+                    {{fecha}}</span>
+            </td>
+        </tr>
+    </table>
+</div> 
+
+
+
+<body>
+    
+    <section>
+        <div style="margin: 2%;">
+            <p class="letter">Publico: {{entidad}}</p>
+
+            <p class="letter">Empresa: <strong>{{nombre}}</strong></p>
+            <p class="letter" style="text-align: justify;">
+                
+                {{solicitudes}}
+            </p>
+
+        </div>
+       
+    </section>
+</body>
+
+</html>
